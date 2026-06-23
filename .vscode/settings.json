@@ -1,0 +1,32 @@
+{
+  "cSpell.words": [
+    "AOZORA",
+    "dotenv",
+    "Efmt",
+    "Hiragino",
+    "lavfi",
+    "midashi",
+    "Mincho",
+    "mypy",
+    "pyproject",
+    "pytest",
+    "venv",
+    "VOICEVOX",
+    "wavs"
+  ],
+  "cSpell.ignorePaths": [
+    "uv.lock",
+    "pyproject.toml"
+  ],
+  "python.defaultInterpreterPath": ".venv/bin/python",
+  "mypy-type-checker.args": ["--strict"],
+  "mypy-type-checker.path": ["${workspaceFolder}/.venv/Scripts/mypy.exe"],
+  "mypy-type-checker.severity": {
+    "error": "Error",
+    "note": "Information"
+  },
+  "ruff.path": [
+    ".venv/scripts/ruff.exe"
+  ],
+  "ruff.lineLength": 88
+}

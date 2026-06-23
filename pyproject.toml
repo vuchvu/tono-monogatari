@@ -1,0 +1,31 @@
+[project]
+name = "tono-monogatari"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bs4>=0.0.2",
+    "ffmpeg-python>=0.2.0",
+    "i18nice[yaml]>=0.16.0",
+    "litellm>=1.89.3",
+    "pydub>=0.25.1",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "mypy==1.15.0",
+    "pytest>=9.1.1",
+    "ruff>=0.15.18",
+]
+
+[tool.mypy]
+mypy_path = "scripts"
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
+
+[tool.ruff]
+line-length = 88
