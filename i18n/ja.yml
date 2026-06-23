@@ -1,0 +1,29 @@
+ja:
+  fetch_and_cache:
+    loading: "青空文庫から本文を取得中..."
+    cached: "キャッシュが既に %{count} 件あります。再取得する場合は --force を付けてください。"
+    success: "%{count} 話を取得しました。ローカルに保存します..."
+    save: "保存先: %{path}"
+    error:
+      fetch: "本文の取得に失敗しました"
+  generate_audio:
+    targets: "対象: %{count} 話 (speaker=%{speaker})"
+    skip: "[%{current}/%{total}] %{name} は既に存在 -> スキップ"
+    generate:
+      start: "[%{current}/%{total}] 第%{kanji}話 を生成中..."
+      original: "    - 原文を音声合成..."
+      gap: "    - 無音を生成..."
+      colloquial: "    - 口語訳を音声合成..."
+    completed: "完了。出力先: %{path}"
+    error:
+      not_found: "エラー: %{path} が見つかりません。先に fetch_and_cache.py と translate.py を実行してください。"
+      connection: "エラー: VOICEVOX ENGINEに接続できません (%{host})"
+      generate: "エラー: %{error}"
+  translate:
+    targets: "対象: %{count} 話"
+    skip: "[%{current}/%{total}] 第%{kanji}話 -> 既存のためスキップ"
+    translating: "[%{current}/%{total}] 第%{kanji}話 を口語訳中... (%{length}文字)"
+    completed: "完了。出力先: %{path}"
+    error:
+      not_found: "エラー: %{path} が見つかりません。先に fetch_and_cache.py を実行してください。"
+      translate: "エラー: %{error}"
